@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-R</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="images/png" href="./images/f-icon.png">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+
+    *{
+        font-family: "Lilita One", sans-serif;
+        font-weight: 300;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        background-image: url(./images/log-bg.jpg);
+        background-color: #cccccc;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #table{
+        box-shadow: 15px 15px 15px black;
+        background: linear-gradient(rgba(176,0,255,1) 0%, rgba(0,0,0,1) 100%);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+</style>
+
+<body>
+
+        <!--Form-->
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div id="table" class="col-lg-6 col-md-8 col-sm-10  text-center p-4">
+                    <div class="mb-3">
+                        <input type="text" placeholder="Email" class="form-control text-center" id="email" required>
+                      </div>
+                    <div class="mb-3">
+                      <input type="password" placeholder="Enter Your Password" class="form-control text-center" id="password" required>
+                    </div>
+                    <div class="text-center text-white mt-3">
+                        <p>Don't have an account?<a href="./register.html" class="text-decoration-none text-info"> Register</a></p>
+                    </div>
+                    <button id="login" onclick="log()" type="submit" class="btn btn-primary"><i class="fa-solid fa-user fa-flip" style="color: #ffffff;"></i> Login</button>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+<script>
+
+    //Login functionality
+    let login=document.getElementById('login');
+    login.addEventListener('click',()=>{
+        let email=document.getElementById('email').value;
+        let password=document.getElementById('password').value;
+
+        //checking local storage for account
+        let accDetails=JSON.parse(localStorage.getItem(email));
+        console.log(accDetails); //check working
+
+        if (accDetails && accDetails.password === password) {
+            alert(`${accDetails.username} Welcome to Diabetic Retinopathy Predictor`);
+            window.location='./home.html';
+        } else {
+            alert("Invalid Email id or Password");
+            document.getElementById('email').value="";
+            document.getElementById('password').value="";
+        }
+    });
+
+</script>
+
+</html>

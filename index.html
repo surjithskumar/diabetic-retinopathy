@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-R</title>
+
+    <!--Favicon-->
+    <link rel="icon" type="images/png" href="./images/f-icon.png">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<style>
+
+    *{
+        font-family: "Lilita One", sans-serif;
+        font-weight: 300;
+    }
+    .navbar{
+      background: linear-gradient(270deg, rgba(0,255,124,1) 49%, rgba(24,0,255,1) 100%);
+    }
+    span{
+        color:darkolivegreen
+    }
+    body{
+        background-color: aliceblue;
+    }
+
+</style>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"><i class="fa-solid fa-eye fa-fade"></i> <i class="fa-solid fa-eye fa-fade"></i></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </nav>
+
+      <!--Header Section-->
+        <header>
+            <div class="container">
+                <br><br><br>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-center">
+                        <h1 class="text-primary">What is <br>Diabetic Retinopathy ?</h1>
+                        <hr>
+                        <p class="text-justify">Diabetic retinopathy is an eye condition that occurs when diabetes damages the blood vessels and nerve tissue in the retina.
+                            <br>
+                            <span>Explanation :</span> 
+                            <br>
+                            High blood sugar levels from diabetes can damage the retina, the light-sensitive tissue in the back of the eye. This can lead to vision loss or blindness if left untreated.
+                            <br> 
+                            <span>Stages :</span>
+                            <br>
+                            Diabetic retinopathy has two stages:
+                            <br>
+                            <span>Nonproliferative retinopathy :</span> The early stage, where blood vessels swell and leak. This can cause mild vision loss and macular edema, which is swelling of the retina.
+                            <br> 
+                            <span>Proliferative retinopathy :</span> The advanced stage, where abnormal new blood vessels grow on the retina's surface. These vessels can break and bleed into the vitreous, causing severe vision loss.
+                            <br> 
+                            <span>Risk factors :</span>
+                            The longer you have diabetes and the less controlled your blood sugar is, the more likely you are to develop diabetic retinopathy. </p>
+                        <hr>
+                    </div>
+                    <br><br><br>
+                    <div class="col-lg-6 text-center">
+                        <iframe src="https://www.youtube.com/embed/JxMOsMDM1UM?si=kOKmJCUbFsc6KUoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <br><br><br>
+                    </div>
+                    <button onclick="start()" class="btn btn-outline-primary" type="submit">Let's Get Started</button>
+                </div>
+                <br><br><br>
+            </div>
+        </header>
+    
+      <!--Footer-->
+      <section>
+        <footer class="bg-black text-center">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!-- Section: Images -->
+              <section class="">
+                <div class="row">
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div data-mdb-ripple-init
+                      class="bg-image hover-overlay shadow-1-strong rounded"
+                      data-ripple-color="light"
+                    >
+                      <img src="./images/db-5.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div data-mdb-ripple-init
+                      class="bg-image hover-overlay shadow-1-strong rounded"
+                      data-ripple-color="light"
+                    >
+                      <img src="./images/db-1.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div data-mdb-ripple-init
+                      class="bg-image hover-overlay shadow-1-strong rounded"
+                      data-ripple-color="light"
+                    >
+                      <img src="./images/db-2.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div data-mdb-ripple-init
+                      class="bg-image hover-overlay shadow-1-strong rounded"
+                      data-ripple-color="light"
+                    >
+                      <img src="./images/db-3.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div data-mdb-ripple-init
+                      class="bg-image hover-overlay shadow-1-strong rounded"
+                      data-ripple-color="light"
+                    >
+                      <img src="./images/db-6.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <div data-mdb-ripple-init
+                      class="bg-image hover-overlay shadow-1-strong rounded"
+                      data-ripple-color="light"
+                    >
+                      <img src="./images/db-4.jpg" class="w-100" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Section: Images -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3 bg-warning" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2023 Copyright :
+              <a class="text-body" href="">Diabetic Retinopathy.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+      </section>
+</body>
+
+<script>
+
+    function start(){
+        window.location="./welcome.html"
+    }
+    
+
+</script>
+
+</html>
